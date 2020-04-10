@@ -1,6 +1,89 @@
-.remove{
-    margin-left: 4rem;
-    cursor: pointer;
-    color: red;
-    font-weight: bold;
+body {
+  font-family: "Ubuntu", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(224, 224, 224);
+}
+.remove {
+  margin-left: 5rem;
+  cursor: pointer;
+  color: rgb(255, 0, 0) !important;
+  font-weight: bold;
+}
+li {
+  list-style: none;
+  max-width: 300px;
+}
+.container {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  width: 500px;
+  min-height: 95vh;
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  border-radius: 0;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.137);
+}
+.input-group {
+  position: absolute;
+  left: 0;
+  bottom: 1.8%;
+  margin-bottom: -1rem !important;
+}
+.form-control {
+  border: none !important;
+  border-radius: 0;
+  border-color: black;
+  background-color: #ced4da38;
+  border: 1px solid #ced4da !important;
+  height: 50px;
+}
+.form-control:focus {
+  box-shadow: none;
+}
+.btn {
+  border: none !important;
+  border-radius: 0;
+}
+#time {
+  margin-top: 60.6%;
+  color: rgb(255, 255, 255);
+}
+#time h1 {
+  background-image: linear-gradient(to bottom, transparent, #000);
+  margin-left: -15px;
+  width: 100%;
+}
+#output {
+  margin-top: 80%;
+  font-size: 18px;
+}
+#time h1 {
+  position: absolute;
+  z-index: 2 !important;
+}
+.img-wrapper {
+  z-index: -1 !important;
+}
+#img {
+  position: absolute;
+  left: 0px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 100%;
+}
+@media (max-width: 574px) {
+  .container {
+    min-height: 100vh;
+    border-radius: 0;
+    margin: 0;
+  }
+  .form-control,
+  .btn,
+  #img {
+    border-radius: 0;
+  }
 }
